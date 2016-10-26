@@ -1,4 +1,5 @@
-FROM scratch
+FROM alpine
+RUN apk add --update ca-certificates
 
 COPY gnatsd /gnatsd
 COPY gnatsd.conf /gnatsd.conf
